@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weather.sc2controller">
+   <children>
+      <GridPane layoutX="18.0" layoutY="57.0" prefHeight="278.0" prefWidth="564.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="cityTXT" strokeType="OUTSIDE" strokeWidth="0.0" text="city" textAlignment="CENTER" wrappingWidth="276.75797271728516">
+               <font>
+                  <Font name="Baloo" size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="tempTXT" layoutX="10.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="temp" textAlignment="CENTER" wrappingWidth="276.75797271728516" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Baloo" size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="statusTXT" layoutX="10.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="status" textAlignment="CENTER" wrappingWidth="276.75797271728516" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baloo" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="regionTXT" layoutX="10.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="region" textAlignment="CENTER" wrappingWidth="276.75797271728516" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baloo" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <Button fx:id="backbtn" layoutX="256.0" layoutY="344.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="87.0" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
